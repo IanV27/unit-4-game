@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrystalsCollector</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<!-- Title of the Game -->
+<body>
+    <header>
+        <div class="container fluid"> 
+            <div class="row">
+                <div class="jumbotron">
+                    <div id="CrystalsCollector">
+                <h1><strong>CrystalsCollector</strong></h1></div>
+                </div>
+            </div>
+        </div>
+
+<!-- Instruction for the Game -->
+<div class="container fluid"> 
+    <div class="row">  
+        <div class="jumbotron">
+            <div class="col-sm-12 instructions">      
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal</p>
+            </div>
+        </div> 
+    </div>
+</div>        
+    </header>
+
+    <main>
+<!-- Keep track of the score -->
+<div class=container>
+    <div class="col-sm-12">
+        <div class="stats">
+            <p>Wins: <span id="wins"></span></p>
+            <p>Losses: <span id="losses"></span></p>
+    </div>
+</div>    
+
+<!-- Button crystal images -->
+<section id="game-display"> 
+        <div id="random-number"></div> 
+        <div id="crystals">
+            <img id="red" src="assets/images/safe_image_1_dfd63a86-36a6-4376-98c2-fc4f62258150_1024x1024.jpg" class="img-thumbnail red" alt="Red Crystal" width="100" height="100"/>
+            <img id="blue" src="assets/images/blue-crystals-vector-clipart_96a61667-1b3b-41c4-8caa-f7634ae878fc.png" class="img-thumbnail red" alt="Blue Crystal" width="100" height="100"/>
+            <img id="yellow" src="assets/images/RT70212Y_2.jpg" class="img-thumbnail red" alt="Yellow Crystal" width="100" height="100"/></a>
+            <img id="green" src="assets/images/10619479-1340982452-230158.jpg" class="img-thumbnail red" alt="Green Crystal" width="100" height="100"/></a>    
+        </div>
+    </section>
+
+<!-- Keeps track of total -->
+<div class=container>    
+    <div class="row">
+            <div class="col-sm-12 score">
+                <p>Your total score is: <span id="totalScore"></span></p> 
+            </div>
+    </div>
+</div>
+<!-- Generates a random number -->
+<div class=container>
+    <div class="row">
+        <div class="col-sm-9">
+            <h2> <span id="scoreToMatch"></span></h2>
+        </div>
+    </div>
+</div>       
+
+    
+    
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
